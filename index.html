@@ -6,16 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Insta Page</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="icon" href="img/instagram_favicon.png">
+    <link rel="icon" href="img/favicon.ico">
 </head>
 
 <body>
+    <!--.preloader-->
+    <div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div>
+    <!--/.preloader-->
+
     <header>
         <nav class="navbar">
             <div class="nav-wrapper">
                 <img src="img/logo.PNG" class="brand-img" alt="">
-                <input type="text" class="search-box" placeholder="search">
+                <form class="search">
+                    <input type="search" class="search-box" placeholder="Search">
+                </form>
+                <ul id="searchList">
+
+                </ul>
                 <div class="nav-items">
                     <img src="img/home.PNG" class="icon" alt="">
                     <img src="img/messenger.PNG" class="icon" alt="">
@@ -33,7 +45,9 @@
                 <div class="left-col">
                     <!--left col-->
 
-                    <div class="status-wrapper">
+                    <div id="status-slider" class="status-wrapper">
+
+
                         <div class="status-card">
                             <div class="profile-pic"><img src="img/cover 1.png" alt=""></div>
                             <p class="username">user_name_1</p>
@@ -67,6 +81,12 @@
                             <div class="profile-pic"><img src="img/cover 8.png" alt=""></div>
                             <p class="username">user_name_8</p>
                         </div>
+
+                        <a class="left-control" href="#home-slider" data-slide="prev"><i
+                                class="fa fa-angle-left"></i></a>
+                        <a class="right-control" href="#home-slider" data-slide="next"><i
+                                class="fa fa-angle-right"></i></a>
+
                     </div>
                     <!-- // status wrappers -->
 
@@ -409,6 +429,9 @@
         </section>
     </footer> -->
 
+    <script src="script/jquery.js" type="text/javascript"></script>
+    <script src="script/bootstrap.min.js" type="text/javascript"></script>
+    <script src="script/app.js" type="text/javascript"></script>
 </body>
 
 </html>

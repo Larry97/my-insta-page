@@ -22,7 +22,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 50px;
+    height: 60px;
     background: #fff;
     border-bottom: 1px solid #dfdfdf;
     display: flex;
@@ -44,18 +44,26 @@ body {
     margin-top: 5px;
 }
 
+.search {
+    border: none;
+    padding: 0;
+}
+
 .search-box {
-    position: absolute;
+    /* position: absolute; */
+    margin-left: 80%;
     left: 50%;
     transform: translateX(-50%);
-    width: 200px;
-    height: 25px;
-    background: #fafafa;
+    width: 220px;
+    height: 35px;
+    padding: 9px 4px 9px 40px;
+    background: #efefef url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat left;
+    background-position: 15px;
     border: 1px solid #dfdfdf;
     border-radius: 2px;
     color: rgba(0, 0, 0, 0.5);
-    text-align: center;
     text-transform: capitalize;
+
 }
 
 .search-box::placeholder {
@@ -77,7 +85,7 @@ body {
 .user-profile {
     width: 22px;
     border-radius: 50%;
-    background-image:url(../img/profile-pic.png);
+    background-image: url(../img/profile-pic.png);
     background-size: cover;
 }
 
@@ -94,7 +102,7 @@ body {
     max-width: 1000px;
     display: grid;
     grid-template-columns: 60% 40%;
-    grid-gap: 10px;
+    grid-gap: 15px;
 }
 
 .left-col {
@@ -372,7 +380,9 @@ body {
     .right-col {
         display: none;
     }
-
+    .search-box {
+        width: 200px;
+    }
     .nav-wrapper,
     .wrapper {
         width: 90%;
